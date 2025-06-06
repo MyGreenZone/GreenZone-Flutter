@@ -1,3 +1,4 @@
+import 'package:greenzone_customer/constants/variable_key.dart';
 import 'package:greenzone_customer/extentions/iterable.dart';
 
 
@@ -16,6 +17,6 @@ enum DeliveryMethod {
     final found = DeliveryMethod.values.firstWhereOrNull(
       (it) => it.value == value
     );
-    return found?.shortLabel ?? 'Not found';
+    return found?.shortLabel ?? VariableKey.notFound;
   }
 }

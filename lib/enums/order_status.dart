@@ -1,3 +1,6 @@
+import 'package:greenzone_customer/constants/variable_key.dart';
+import 'package:greenzone_customer/extentions/iterable.dart';
+
 enum OrderStatus {
   awaitingPayment("Chờ thanh toán", "awaitingPayment"),
   pendingConfirmation("Chờ xác nhận", "pendingConfirmation"),
@@ -22,7 +25,38 @@ enum OrderStatus {
   }
 
   static String getLabelByValue(String value) {
-    final status = OrderStatus.values.where((it) => it.value == value).firstOrNull;
-    return status?.label ?? 'Not found';
+    final status = OrderStatus.values.firstWhereOrNull(
+      (it) => it.value == value,
+    );
+    return status?.label ?? VariableKey.notFound;
   }
+
+  static MessageInfo getMessageInfoByStatus(OrderStatus status) {
+    switch (status) {
+      case awaitingPayment:
+        return const MessageInfo('success', 'warning');
+
+      case pendingConfirmation:
+        return const MessageInfo('success', 'success');
+
+      case processing:
+      case shippingOrder:
+        return const MessageInfo('info', 'info');
+
+      case readyForPickup:
+      case completed:
+        return const MessageInfo('success', 'success');
+
+      case cancelled:
+        return const MessageInfo('danger', 'danger');
+    }
+  }
+}
+
+class MessageInfo {
+  final String type;
+  final String icon;
+
+  // constructor
+  const MessageInfo(this.type, this.icon);
 }
