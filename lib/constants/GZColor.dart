@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+
+class GZColor {
+  static const Color primary = Color(0xFF299345);
+  static const Color green750 = Color(0xFF28A745);
+  static const Color green700 = Color(0xFF31A569);
+  static const Color green600 = Color(0xFF43D685);
+  static const Color green500 = Color(0xFF97C93C);
+  static const Color green200 = Color(0xFFE7FFCE);
+  static const Color green100 = Color(0xFFEFFDEE);
+  static const Color teal900 = Color(0xFF018786);
+  static const Color teal700 = Color(0xFF06988B);
+  static const Color black = Color(0xFF232323);
+  static const Color gray900 = Color(0xFF434343);
+  static const Color gray850 = Color(0xFF494949);
+  static const Color gray700 = Color(0xFF666666);
+  static const Color gray400 = Color(0xFFA59F9F);
+  static const Color gray300 = Color(0xFFC9C3C3);
+  static const Color gray200 = Color(0xFFEAE9E9);
+  static const Color brown700 = Color(0xFF744D4A);
+  static const Color red900 = Color(0xFFDC3545);
+  static const Color red800 = Color(0xFFFF343B);
+  static const Color milk = Color(0xFFFDE0BE);
+  static const Color milk200 = Color(0xFFFEFBEA);
+  static const Color orange700 = Color(0xFFFF6924);
+  static const Color yellow700 = Color(0xFFFFA418);
+  static const Color yellow600 = Color(0xFFFEB602);
+  static const Color yellow500 = Color(0xFFFFC106);
+  static const Color yellow300 = Color(0xFFF2CC57);
+  static const Color pink500 = Color(0xFFF04C7F);
+  static const Color pink200 = Color(0xFFFFC7E3);
+  static const Color blue600 = Color(0xFF1773EA);
+  static const Color blue500 = Color(0xFF3DABDC);
+  static const Color white = Color(0xFFFFFFFF);
+  static const Color white100 = Color(0xFFFDFCFC);
+  static const Color transparent = Color(0x00000000);
+  static const Color overlay = Color(0x80000000); // 50% alpha
+  static const Color grayBg = Color(0xFFF5F5F5);
+  static const Color fbBg = Color(0xFFF2F4F7);
+  static const Color lightRed = Color(0xFFFDF3F2);
+  static const Color lightBlue = Color(0xFFF1F9FC);
+  static const Color invalid = Color(0xFFD32F2F);
+  static const Color disabledBg = Color(0xFFE3E3E5);
+  static const Color disabledText = Color(0xFFACACAE);
+  static const Color borderInput = Color(0xFFD9D9D9);
+  static const Color magenta = Color(0xFFFF00FF);
+  static const Color violet = Color(0xFFC300FF);
+  static const Color earthYellow = Color(0xFFBD9E02);
+  static const Color lemon = Color(0xFF50AD03);
+  static const Color shineYellow = Color(0xFFF5C105);
+}
