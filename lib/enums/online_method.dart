@@ -1,6 +1,6 @@
 enum OnlineMethod{
-  PAYOS('PayOS', 'payos'),
-  CARD('Card', 'card');
+  payOS('PayOS', 'payos'),
+  card('Card', 'card');
 
   final String label;
   final String value;
